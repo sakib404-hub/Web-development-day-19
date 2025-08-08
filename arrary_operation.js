@@ -19,13 +19,15 @@ console.log(`Sum of the numbers is ${sumi}`);
  */
 function evenNumbers(arr) {
   let even = [];
+  let sum = 0;
   for (let num of arr) {
     if (num % 2 === 0) {
       even.push(num);
+      sum += num;
     }
   }
+  console.log(`Summiation of even numbers in thr array is : ${sum}`);
   return even;
 }
-
 let numbers = evenNumbers([10, 20, 33, 50, 29, 50, 70, 77]);
 console.log(numbers);
